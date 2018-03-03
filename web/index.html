@@ -1,0 +1,84 @@
+<!-- 
+    Created on : 03/03/2018, 01:05:06
+    Author     : https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+    Edited by  : ALLAN
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Cars - ALLAN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/css.css">
+        <script type="text/javascript" src="JavaS/javas.js"></script>
+    </head>
+    <body bgcolor="#222">
+        <div><h1><center>Meu Album de Carros<br></h1>
+                     <h3>My Book of Cars</h3></center></div>
+        
+        <!-- Container for the image gallery -->
+    <center>
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">    
+        <img src="imagens/car1.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">    
+        <img src="imagens/car2.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">    
+        <img src="imagens/car3.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">    
+        <img src="imagens/car4.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">    
+        <img src="imagens/car5.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">   
+        <img src="imagens/car6.jpg" style="width:50%">
+        </div>
+    </center>
+    
+    <!-- BOTOES -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- TEXTO DE CADA IMAGEM -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <!-- FOTOS DO ALBUM -->
+    <div class="row">
+        <div class="column">
+        <img class="demo cursor" src="imagens/car1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        
+        <div class="column"> 
+        <img class="demo cursor" src="imagens/car2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+        </div>
+        
+        <div class="column">
+        <img class="demo cursor" src="imagens/car3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        
+        <div class="column">
+        <img class="demo cursor" src="imagens/car4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        
+        <div class="column">
+        <img class="demo cursor" src="imagens/car5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div> 
+        
+        <div class="column">
+        <img class="demo cursor" src="imagens/car6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+    </div>
